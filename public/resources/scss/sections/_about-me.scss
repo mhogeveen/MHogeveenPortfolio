@@ -1,6 +1,11 @@
 #about-me {
+  @include flex-box(flex-end, stretch, row, flex);
+  position: relative;
+  box-sizing: border-box;
+  background-image: url(../images/bg-about-me.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   width: 100%;
   height: 100vh;
-  box-sizing: border-box;
   border-right: 3px solid $about-me;
 }
