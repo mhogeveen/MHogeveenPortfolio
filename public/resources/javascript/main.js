@@ -68,25 +68,19 @@ $(document).ready(function() {
     $('#navigation-in').css('border-right', '3px solid #eef6ff');
   });
 
-  // Menu in/out functionality
-  // $('.slider').click(function() {
-  //   $('#navigation-out').animate('left', '-21%');
-  //   $('#navigation-in').css('left', '0');
-  // });
-  //
-  // $('.slider-bt').click(function() {
-  //   $('#navigation-in').css('left', '-8%');
-  //   $('#navigation-out').css('left', '0');
-  // });
-
+  // Toggle between menu styles
   $('.slider').click(function() {
     $('#navigation-out').animate({'left': '-21%'});
     $('#navigation-in').animate({'left': '0'});
+    $('.container').animate({'width': '75%'});
+    return false;
   });
 
   $('.slider-bt').click(function() {
     $('#navigation-in').animate({'left': '-8%'});
     $('#navigation-out').animate({'left': '0'});
+    $('.container').animate({'width': '65%'});
+    return false;
   });
 
 });
