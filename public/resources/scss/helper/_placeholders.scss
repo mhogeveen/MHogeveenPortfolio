@@ -27,7 +27,7 @@
 }
 
 .container {
-  @include flex-box(center, center, column, flex);
-  width: 100%;
+  @include flex-box(center, stretch, column, flex);
+  width: 70%;
   height: 100vh;
 }

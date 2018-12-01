@@ -7,6 +7,7 @@
 
 @import "sections/menu";
 @import "sections/home";
+@import "sections/about-me";
 
 html {
   width: 100%;
@@ -14,4 +15,5 @@ html {
   color: $white;
   background-color: $black;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
