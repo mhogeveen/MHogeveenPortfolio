@@ -5,92 +5,13 @@
 @import "helper/mixins";
 @import "helper/placeholders";
 
+@import "sections/menu";
+@import "sections/home";
+
 html {
+  width: 100%;
   font-size: 16px;
   color: $white;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#navigation {
-  @include flex-box(flex-start, stretch, column, flex);
-  width: 250px;
-  min-height: 100vh;
   background-color: $black;
-  border-right: 3px solid $black;
-  transition: border-right 400ms ease;
-
-  .nav-content {
-    @include flex-box(flex-start, center, column, flex);
-    align-self: center;
-    padding-top: 20px;
-    width: 100%;
-
-    .nav-header {
-      @include flex-box(flex-start, stretch, column, flex);
-
-      span {
-        font-size: 2rem;
-        font-weight: 600;
-      }
-
-      i {
-        align-self: center;
-      }
-    }
-
-    .nav-links {
-      @include flex-box(flex-start, flex-start, column, flex);
-      width: 100%;
-
-      .home, .about-me, .skills, .portfolio, .contact {
-        border-bottom: 2px solid $black;
-        transition: border-bottom 400ms ease;
-        width: 250px;
-      }
-
-      .home {
-        &:hover {
-          border-bottom: 2px solid $home;
-        }
-      }
-
-      .about-me {
-        &:hover {
-          border-bottom: 2px solid $about-me;
-        }
-      }
-
-      .skills {
-        &:hover {
-          border-bottom: 2px solid $skills;
-        }
-      }
-
-      .portfolio {
-        &:hover {
-          border-bottom: 2px solid $portfolio;
-        }
-      }
-
-      .contact {
-        &:hover {
-          border-bottom: 2px solid $contact;
-        }
-      }
-
-      ul {
-        @include flex-box(flex-start, stretch, column, flex);
-
-
-        a {
-          color: $broken-white;
-          text-decoration: none;
-          font-size: 1.25rem;
-          font-weight: 500;
-          line-height: 1.5;
-          margin-left: 43px;
-        }
-      }
-    }
-  }
+  font-family: 'Montserrat', sans-serif;
 }

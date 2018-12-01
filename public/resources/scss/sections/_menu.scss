@@ -1,0 +1,86 @@
+#navigation {
+  @include flex-box(flex-start, stretch, column, flex);
+  position: fixed;
+  z-index: 10;
+  width: 20%;
+  min-height: 100vh;
+  background-color: $black;
+  border-right: 3px solid $broken-white;
+  transition: border-right 400ms ease;
+
+  .nav-content {
+    @include flex-box(flex-start, flex-start, column, flex);
+    align-self: center;
+    padding-top: 20px;
+    width: 100%;
+
+    .nav-header {
+      @include flex-box(flex-start, flex-start, column, flex);
+      padding-left: 15%;
+
+      span {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      i {
+        align-self: center;
+      }
+    }
+
+    .nav-links {
+      @include flex-box(flex-start, stretch, column, flex);
+      width: 100%;
+
+      .home, .about-me, .skills, .portfolio, .contact {
+        border-bottom: 2px solid $broken-white;
+        transition: border-bottom 400ms ease;
+        padding-left: 15%;
+      }
+
+      .home {
+        &:hover {
+          border-bottom: 2px solid $home;
+        }
+      }
+
+      .about-me {
+        &:hover {
+          border-bottom: 2px solid $about-me;
+        }
+      }
+
+      .skills {
+        &:hover {
+          border-bottom: 2px solid $skills;
+        }
+      }
+
+      .portfolio {
+        &:hover {
+          border-bottom: 2px solid $portfolio;
+        }
+      }
+
+      .contact {
+        &:hover {
+          border-bottom: 2px solid $contact;
+        }
+      }
+
+      ul {
+        @include flex-box(flex-start, stretch, column, flex);
+
+
+        a {
+          color: $broken-white;
+          text-decoration: none;
+          font-size: 1.25rem;
+          font-weight: 500;
+          line-height: 1.5;
+          //margin-left: 43px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+#home {
+  position: relative;
+  background-image: url(../images/bg-home.jpg);
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  min-height: 100vh;
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+}
