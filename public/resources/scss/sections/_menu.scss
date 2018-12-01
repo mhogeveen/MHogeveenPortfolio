@@ -1,8 +1,12 @@
-#navigation {
-  @include flex-box(flex-start, stretch, column, flex);
+#navigation-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   position: fixed;
   z-index: 10;
   width: 20%;
+  left: 0;
   min-height: 100vh;
   background-color: $black;
   border-right: 3px solid $broken-white;
@@ -12,12 +16,19 @@
   .nav-content {
     @include flex-box(flex-start, flex-start, column, flex);
     align-self: center;
-    padding-top: 20px;
+    padding-top: 10px;
     width: 100%;
 
     .nav-header {
       @include flex-box(flex-start, flex-start, column, flex);
       padding-left: 15%;
+
+      a {
+        padding-bottom: 20px;
+        text-decoration: none;
+        color: $broken-white;
+        font-size: 0.75rem;
+      }
 
       span {
         font-size: 2rem;
@@ -79,9 +90,85 @@
           font-size: 1.25rem;
           font-weight: 500;
           line-height: 1.5;
-          //margin-left: 43px;
         }
       }
+    }
+  }
+}
+
+#navigation-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 7%;
+  left: -8%;
+  min-height: 100vh;
+  background-color: $black;
+  border-right: 3px solid $broken-white;
+  box-shadow: 1px 0 15px $black;
+  transition: border-right 400ms ease;
+
+  a {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    text-align: center;
+  }
+
+  .slider-bt, .home-bt, .about-me-bt, .skills-bt, .portfolio-bt, .contact-bt {
+    @include flex-box(center, center, row, flex);
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border-top: 2px solid $broken-white;
+    border-bottom: 2px solid $broken-white;
+    transition: border-top 400ms ease, border-bottom 400ms ease;
+
+    i{
+      color: $broken-white;
+    }
+  }
+
+  .slider-bt {
+    &:hover {
+      border-top: 2px solid $gray;
+      border-bottom: 2px solid $gray;
+    }
+  }
+
+  .home-bt {
+    &:hover {
+      border-top: 2px solid $home;
+      border-bottom: 2px solid $home;
+    }
+  }
+
+  .about-me-bt {
+    &:hover {
+      border-top: 2px solid $about-me;
+      border-bottom: 2px solid $about-me;
+    }
+  }
+
+  .skills-bt {
+    &:hover {
+      border-top: 2px solid $skills;
+      border-bottom: 2px solid $skills;
+    }
+  }
+
+  .portfolio-bt {
+    &:hover {
+      border-top: 2px solid $portfolio;
+      border-bottom: 2px solid $portfolio;
+    }
+  }
+
+  .contact-bt {
+    &:hover {
+      border-top: 2px solid $contact;
+      border-bottom: 2px solid $contact;
     }
   }
 }

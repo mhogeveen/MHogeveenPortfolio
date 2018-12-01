@@ -29,69 +29,124 @@
   width: 70%;
   height: 100vh; }
 
-#navigation {
+#navigation-out {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  flex-direction: column;
-  display: flex;
   position: fixed;
   z-index: 10;
   width: 20%;
+  left: 0;
   min-height: 100vh;
   background-color: #000000;
   border-right: 3px solid #eef6ff;
   box-shadow: 1px 0 15px #000000;
   transition: border-right 400ms ease; }
-  #navigation .nav-content {
+  #navigation-out .nav-content {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     display: flex;
     align-self: center;
-    padding-top: 20px;
+    padding-top: 10px;
     width: 100%; }
-    #navigation .nav-content .nav-header {
+    #navigation-out .nav-content .nav-header {
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
       display: flex;
       padding-left: 15%; }
-      #navigation .nav-content .nav-header span {
+      #navigation-out .nav-content .nav-header a {
+        padding-bottom: 20px;
+        text-decoration: none;
+        color: #eef6ff;
+        font-size: 0.75rem; }
+      #navigation-out .nav-content .nav-header span {
         font-size: 2rem;
         font-weight: 600; }
-      #navigation .nav-content .nav-header i {
+      #navigation-out .nav-content .nav-header i {
         align-self: center; }
-    #navigation .nav-content .nav-links {
+    #navigation-out .nav-content .nav-links {
       justify-content: flex-start;
       align-items: stretch;
       flex-direction: column;
       display: flex;
       width: 100%; }
-      #navigation .nav-content .nav-links .home, #navigation .nav-content .nav-links .about-me, #navigation .nav-content .nav-links .skills, #navigation .nav-content .nav-links .portfolio, #navigation .nav-content .nav-links .contact {
+      #navigation-out .nav-content .nav-links .home, #navigation-out .nav-content .nav-links .about-me, #navigation-out .nav-content .nav-links .skills, #navigation-out .nav-content .nav-links .portfolio, #navigation-out .nav-content .nav-links .contact {
         border-bottom: 2px solid #eef6ff;
         transition: border-bottom 400ms ease;
         padding-left: 15%; }
-      #navigation .nav-content .nav-links .home:hover {
+      #navigation-out .nav-content .nav-links .home:hover {
         border-bottom: 2px solid #112f41; }
-      #navigation .nav-content .nav-links .about-me:hover {
+      #navigation-out .nav-content .nav-links .about-me:hover {
         border-bottom: 2px solid #068587; }
-      #navigation .nav-content .nav-links .skills:hover {
+      #navigation-out .nav-content .nav-links .skills:hover {
         border-bottom: 2px solid #4fb99f; }
-      #navigation .nav-content .nav-links .portfolio:hover {
+      #navigation-out .nav-content .nav-links .portfolio:hover {
         border-bottom: 2px solid #f2b134; }
-      #navigation .nav-content .nav-links .contact:hover {
+      #navigation-out .nav-content .nav-links .contact:hover {
         border-bottom: 2px solid #ed553b; }
-      #navigation .nav-content .nav-links ul {
+      #navigation-out .nav-content .nav-links ul {
         justify-content: flex-start;
         align-items: stretch;
         flex-direction: column;
         display: flex; }
-        #navigation .nav-content .nav-links ul a {
+        #navigation-out .nav-content .nav-links ul a {
           color: #eef6ff;
           text-decoration: none;
           font-size: 1.25rem;
           font-weight: 500;
           line-height: 1.5; }
+
+#navigation-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 7%;
+  left: -8%;
+  min-height: 100vh;
+  background-color: #000000;
+  border-right: 3px solid #eef6ff;
+  box-shadow: 1px 0 15px #000000;
+  transition: border-right 400ms ease; }
+  #navigation-in a {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    text-align: center; }
+  #navigation-in .slider-bt, #navigation-in .home-bt, #navigation-in .about-me-bt, #navigation-in .skills-bt, #navigation-in .portfolio-bt, #navigation-in .contact-bt {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border-top: 2px solid #eef6ff;
+    border-bottom: 2px solid #eef6ff;
+    transition: border-top 400ms ease, border-bottom 400ms ease; }
+    #navigation-in .slider-bt i, #navigation-in .home-bt i, #navigation-in .about-me-bt i, #navigation-in .skills-bt i, #navigation-in .portfolio-bt i, #navigation-in .contact-bt i {
+      color: #eef6ff; }
+  #navigation-in .slider-bt:hover {
+    border-top: 2px solid #666666;
+    border-bottom: 2px solid #666666; }
+  #navigation-in .home-bt:hover {
+    border-top: 2px solid #112f41;
+    border-bottom: 2px solid #112f41; }
+  #navigation-in .about-me-bt:hover {
+    border-top: 2px solid #068587;
+    border-bottom: 2px solid #068587; }
+  #navigation-in .skills-bt:hover {
+    border-top: 2px solid #4fb99f;
+    border-bottom: 2px solid #4fb99f; }
+  #navigation-in .portfolio-bt:hover {
+    border-top: 2px solid #f2b134;
+    border-bottom: 2px solid #f2b134; }
+  #navigation-in .contact-bt:hover {
+    border-top: 2px solid #ed553b;
+    border-bottom: 2px solid #ed553b; }
 
 #home {
   justify-content: flex-end;
