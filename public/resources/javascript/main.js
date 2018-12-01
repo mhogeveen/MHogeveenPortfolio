@@ -1,26 +1,32 @@
 $(document).ready(function() {
-  $('.home a').hover(function() {
-    $('#navigation').css('transition', 'border-right 300ms ease');
+  $('.home').hover(function() {
     $('#navigation').css('border-right', '3px solid #112f41');
+    }, function() {
+    $('#navigation').css('border-right', '3px solid #000000');
   });
 
-  $('.about-me a').hover(function() {
-    $('#navigation').css('transition', 'border-right 300ms ease');
+  $('.about-me').hover(function() {
     $('#navigation').css('border-right', '3px solid #068587');
+    }, function() {
+    $('#navigation').css('border-right', '3px solid #000000');
   });
 
-  $('.skills a').hover(function() {
-    $('#navigation').css('transition', 'border-right 300ms ease');
+  $('.skills').hover(function() {
     $('#navigation').css('border-right', '3px solid #4fb99f');
+    }, function() {
+    $('#navigation').css('border-right', '3px solid #000000');
   });
 
-  $('.portfolio a').hover(function() {
-    $('#navigation').css('transition', 'border-right 300ms ease');
+  $('.portfolio').hover(function() {
     $('#navigation').css('border-right', '3px solid #f2b134');
+    }, function() {
+    $('#navigation').css('border-right', '3px solid #000000');
   });
 
-  $('.contact a').hover(function() {
-    $('#navigation').css('transition', 'border-right 300ms ease');
+  $('.contact').hover(function() {
     $('#navigation').css('border-right', '3px solid #ed553b');
+    }, function() {
+    $('#navigation').css('border-right', '3px solid #000000');
   });
+
 });

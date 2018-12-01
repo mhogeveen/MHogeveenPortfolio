@@ -21,6 +21,9 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg); }
 
+.nav-border-home {
+  border-right: 3px solid #112f41; }
+
 html {
   font-size: 16px;
   color: #ffffff;
@@ -34,7 +37,8 @@ html {
   width: 250px;
   min-height: 100vh;
   background-color: #000000;
-  border-right: 3px solid #000000; }
+  border-right: 3px solid #000000;
+  transition: border-right 400ms ease; }
   #navigation .nav-content {
     justify-content: flex-start;
     align-items: center;
@@ -84,6 +88,6 @@ html {
           font-size: 1.25rem;
           font-weight: 500;
           line-height: 1.5;
-          padding-left: 43px; }
+          margin-left: 43px; }
 
 /*# sourceMappingURL=main.css.map */
