@@ -47,7 +47,7 @@
       .home, .about-me, .skills, .portfolio, .contact {
         border-bottom: 2px solid $broken-white;
         transition: border-bottom 400ms ease;
-        padding-left: 15%;
+        //padding-left: 15%;
       }
 
       .home {
@@ -85,11 +85,19 @@
 
 
         a {
+          @include flex-box(flex-start, center, row, flex);
           color: $broken-white;
           text-decoration: none;
           font-size: 1.25rem;
           font-weight: 500;
           line-height: 1.5;
+
+          .icon {
+            @include flex-box(center, stretch, row, flex);
+            width: 15%;
+            color: $black;
+            transition: color 400ms ease;
+          }
         }
       }
     }
@@ -104,7 +112,7 @@
   position: fixed;
   z-index: 10;
   width: 5%;
-  left: -8%;
+  left: -6%;
   min-height: 100vh;
   background-color: $black;
   border-right: 3px solid $broken-white;

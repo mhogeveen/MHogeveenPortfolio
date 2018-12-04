@@ -76,8 +76,7 @@
       width: 100%; }
       #navigation-out .nav-content .nav-links .home, #navigation-out .nav-content .nav-links .about-me, #navigation-out .nav-content .nav-links .skills, #navigation-out .nav-content .nav-links .portfolio, #navigation-out .nav-content .nav-links .contact {
         border-bottom: 2px solid #eef6ff;
-        transition: border-bottom 400ms ease;
-        padding-left: 15%; }
+        transition: border-bottom 400ms ease; }
       #navigation-out .nav-content .nav-links .home:hover {
         border-bottom: 2px solid #112f41; }
       #navigation-out .nav-content .nav-links .about-me:hover {
@@ -94,11 +93,23 @@
         flex-direction: column;
         display: flex; }
         #navigation-out .nav-content .nav-links ul a {
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+          display: flex;
           color: #eef6ff;
           text-decoration: none;
           font-size: 1.25rem;
           font-weight: 500;
           line-height: 1.5; }
+          #navigation-out .nav-content .nav-links ul a .icon {
+            justify-content: center;
+            align-items: stretch;
+            flex-direction: row;
+            display: flex;
+            width: 15%;
+            color: #000000;
+            transition: color 400ms ease; }
 
 #navigation-in {
   display: flex;
@@ -108,7 +119,7 @@
   position: fixed;
   z-index: 10;
   width: 5%;
-  left: -8%;
+  left: -6%;
   min-height: 100vh;
   background-color: #000000;
   border-right: 3px solid #eef6ff;

@@ -3,32 +3,42 @@ $(document).ready(function() {
     // Change color of navigation border on hover (normal layout)
   $('.home').hover(function() {
     $('#navigation-out').css('border-right', '3px solid #112f41');
+    $('.home .icon').css('color', '#eef6ff');
     }, function() {
     $('#navigation-out').css('border-right', '3px solid #eef6ff');
+    $('.home .icon').css('color', '#000000');
   });
 
   $('.about-me').hover(function() {
     $('#navigation-out').css('border-right', '3px solid #068587');
+    $('.about-me .icon').css('color', '#eef6ff');
     }, function() {
     $('#navigation-out').css('border-right', '3px solid #eef6ff');
+    $('.about-me .icon').css('color', '#000000');
   });
 
   $('.skills').hover(function() {
     $('#navigation-out').css('border-right', '3px solid #4fb99f');
+    $('.skills .icon').css('color', '#eef6ff');
     }, function() {
     $('#navigation-out').css('border-right', '3px solid #eef6ff');
+    $('.skills .icon').css('color', '#000000');
   });
 
   $('.portfolio').hover(function() {
     $('#navigation-out').css('border-right', '3px solid #f2b134');
+    $('.portfolio .icon').css('color', '#eef6ff');
     }, function() {
     $('#navigation-out').css('border-right', '3px solid #eef6ff');
+    $('.portfolio .icon').css('color', '#000000');
   });
 
   $('.contact').hover(function() {
     $('#navigation-out').css('border-right', '3px solid #ed553b');
+    $('.contact .icon').css('color', '#eef6ff');
     }, function() {
     $('#navigation-out').css('border-right', '3px solid #eef6ff');
+    $('.contact .icon').css('color', '#000000');
   });
 
   // Change color of navigation border on hover (button layout)
