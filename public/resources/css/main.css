@@ -107,7 +107,7 @@
   align-items: center;
   position: fixed;
   z-index: 10;
-  width: 7%;
+  width: 5%;
   left: -8%;
   min-height: 100vh;
   background-color: #000000;
@@ -159,7 +159,6 @@
   background-image: url(../images/bg-home.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: right;
   border-right: 3px solid #112f41;
   width: 100%;
   min-height: 100vh; }

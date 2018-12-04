@@ -72,12 +72,12 @@ $(document).ready(function() {
   $('.slider').click(function() {
     $('#navigation-out').animate({'left': '-21%'});
     $('#navigation-in').animate({'left': '0'});
-    $('.container').animate({'width': '75%'});
+    $('.container').animate({'width': '80%'});
     return false;
   });
 
   $('.slider-bt').click(function() {
-    $('#navigation-in').animate({'left': '-8%'});
+    $('#navigation-in').animate({'left': '-6%'});
     $('#navigation-out').animate({'left': '0'});
     $('.container').animate({'width': '65%'});
     return false;
