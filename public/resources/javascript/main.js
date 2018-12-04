@@ -1,6 +1,14 @@
 $(document).ready(function() {
 
-    // Change color of navigation border on hover (normal layout)
+  // Change color of navigation border on hover (normal layout)
+  $('.slider').hover(function() {
+    $('#navigation-out').css('border-right', '3px solid #666666');
+    $('.slider .icon').css('color', '#eef6ff');
+    }, function() {
+    $('#navigation-out').css('border-right', '3px solid #eef6ff');
+    $('.slider .icon').css('color', '#000000');
+  });
+
   $('.home').hover(function() {
     $('#navigation-out').css('border-right', '3px solid #112f41');
     $('.home .icon').css('color', '#eef6ff');

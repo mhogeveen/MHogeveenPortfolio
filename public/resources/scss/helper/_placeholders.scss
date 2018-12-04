@@ -6,30 +6,6 @@
   color: $broken-white;
 }
 
-.turqoise {
-  color: $about-me;
-}
-
-.top-left {
-  position: relative;
-  top: 5px;
-  right: 90px;
-}
-
-.bottom-right {
-  position: relative;
-  bottom: 5px;
-  left: 90px;
-}
-
-.fa-rotate-45 {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
 .container {
   @include flex-box(center, flex-start, column, flex);
   padding-right: 10%;

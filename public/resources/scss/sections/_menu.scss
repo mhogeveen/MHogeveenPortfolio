@@ -16,27 +16,15 @@
   .nav-content {
     @include flex-box(flex-start, flex-start, column, flex);
     align-self: center;
-    padding-top: 10px;
     width: 100%;
 
     .nav-header {
-      @include flex-box(flex-start, flex-start, column, flex);
-      padding-left: 15%;
-
-      a {
-        padding-bottom: 20px;
-        text-decoration: none;
-        color: $broken-white;
-        font-size: 0.75rem;
-      }
+      @include flex-box(flex-start, stretch, column, flex);
+      padding: 2rem 0 2rem 15%;
 
       span {
         font-size: 2rem;
         font-weight: 600;
-      }
-
-      i {
-        align-self: center;
       }
     }
 
@@ -44,10 +32,15 @@
       @include flex-box(flex-start, stretch, column, flex);
       width: 100%;
 
-      .home, .about-me, .skills, .portfolio, .contact {
+      .slider, .home, .about-me, .skills, .portfolio, .contact {
         border-bottom: 2px solid $broken-white;
         transition: border-bottom 400ms ease;
-        //padding-left: 15%;
+      }
+
+      .slider {
+        &:hover {
+          border-bottom: 2px solid $gray;
+        }
       }
 
       .home {

@@ -4,26 +4,6 @@
 .broken-white {
   color: #eef6ff; }
 
-.turqoise {
-  color: #068587; }
-
-.top-left {
-  position: relative;
-  top: 5px;
-  right: 90px; }
-
-.bottom-right {
-  position: relative;
-  bottom: 5px;
-  left: 90px; }
-
-.fa-rotate-45 {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
 .container {
   justify-content: center;
   align-items: flex-start;
@@ -53,33 +33,27 @@
     flex-direction: column;
     display: flex;
     align-self: center;
-    padding-top: 10px;
     width: 100%; }
     #navigation-out .nav-content .nav-header {
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: stretch;
       flex-direction: column;
       display: flex;
-      padding-left: 15%; }
-      #navigation-out .nav-content .nav-header a {
-        padding-bottom: 20px;
-        text-decoration: none;
-        color: #eef6ff;
-        font-size: 0.75rem; }
+      padding: 2rem 0 2rem 15%; }
       #navigation-out .nav-content .nav-header span {
         font-size: 2rem;
         font-weight: 600; }
-      #navigation-out .nav-content .nav-header i {
-        align-self: center; }
     #navigation-out .nav-content .nav-links {
       justify-content: flex-start;
       align-items: stretch;
       flex-direction: column;
       display: flex;
       width: 100%; }
-      #navigation-out .nav-content .nav-links .home, #navigation-out .nav-content .nav-links .about-me, #navigation-out .nav-content .nav-links .skills, #navigation-out .nav-content .nav-links .portfolio, #navigation-out .nav-content .nav-links .contact {
+      #navigation-out .nav-content .nav-links .slider, #navigation-out .nav-content .nav-links .home, #navigation-out .nav-content .nav-links .about-me, #navigation-out .nav-content .nav-links .skills, #navigation-out .nav-content .nav-links .portfolio, #navigation-out .nav-content .nav-links .contact {
         border-bottom: 2px solid #eef6ff;
         transition: border-bottom 400ms ease; }
+      #navigation-out .nav-content .nav-links .slider:hover {
+        border-bottom: 2px solid #666666; }
       #navigation-out .nav-content .nav-links .home:hover {
         border-bottom: 2px solid #112f41; }
       #navigation-out .nav-content .nav-links .about-me:hover {
@@ -187,7 +161,10 @@
     font-size: 1.75rem;
     font-weight: 500;
     text-shadow: 1px 1px 6px #000000;
-    line-height: 1.3; }
+    line-height: 1.3;
+    border-left: 4px solid #112f41;
+    margin-left: 2rem;
+    padding-left: 1rem; }
   #home span {
     color: #eef6ff;
     text-shadow: 1px 1px 6px #000000;
@@ -212,7 +189,9 @@
     font-size: 1.75rem;
     font-weight: 500;
     text-shadow: 1px 1px 6px #000000;
-    line-height: 1.3; }
+    line-height: 1.3;
+    align-self: flex-end;
+    padding-bottom: 2rem; }
   #about-me img {
     width: 10rem;
     max-height: auto;
@@ -223,7 +202,9 @@
     text-shadow: 1px 1px 6px #000000;
     font-size: 1.1rem;
     line-height: 1.3;
-    padding: 1rem 0 1rem 0; }
+    border-left: 4px solid #068587;
+    margin-left: 2rem;
+    padding-left: 1rem; }
   #about-me li {
     text-shadow: 1px 1px 6px #000000;
     font-size: 1.1rem;
@@ -250,7 +231,7 @@
       display: flex;
       width: 100%; }
       #about-me .personally .row2 ul {
-        padding: 0 3rem 0 1rem; }
+        padding: 2rem 3rem 0 5rem; }
 
 #skills {
   justify-content: flex-end;
