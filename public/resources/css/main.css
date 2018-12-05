@@ -50,20 +50,20 @@
       display: flex;
       width: 100%; }
       #navigation-out .nav-content .nav-links .slider, #navigation-out .nav-content .nav-links .home, #navigation-out .nav-content .nav-links .about-me, #navigation-out .nav-content .nav-links .skills, #navigation-out .nav-content .nav-links .portfolio, #navigation-out .nav-content .nav-links .contact {
-        border-bottom: 2px solid #eef6ff;
+        border-bottom: 3px solid #eef6ff;
         transition: border-bottom 400ms ease; }
       #navigation-out .nav-content .nav-links .slider:hover {
-        border-bottom: 2px solid #666666; }
+        border-bottom: 3px solid #666666; }
       #navigation-out .nav-content .nav-links .home:hover {
-        border-bottom: 2px solid #112f41; }
+        border-bottom: 3px solid #112f41; }
       #navigation-out .nav-content .nav-links .about-me:hover {
-        border-bottom: 2px solid #068587; }
+        border-bottom: 3px solid #068587; }
       #navigation-out .nav-content .nav-links .skills:hover {
-        border-bottom: 2px solid #4fb99f; }
+        border-bottom: 3px solid #4fb99f; }
       #navigation-out .nav-content .nav-links .portfolio:hover {
-        border-bottom: 2px solid #f2b134; }
+        border-bottom: 3px solid #f2b134; }
       #navigation-out .nav-content .nav-links .contact:hover {
-        border-bottom: 2px solid #ed553b; }
+        border-bottom: 3px solid #ed553b; }
       #navigation-out .nav-content .nav-links ul {
         justify-content: flex-start;
         align-items: stretch;
@@ -113,29 +113,29 @@
     display: flex;
     width: 100%;
     margin: 10px 0 10px 0;
-    border-top: 2px solid #eef6ff;
-    border-bottom: 2px solid #eef6ff;
+    border-top: 3px solid #eef6ff;
+    border-bottom: 3px solid #eef6ff;
     transition: border-top 400ms ease, border-bottom 400ms ease; }
     #navigation-in .slider-bt i, #navigation-in .home-bt i, #navigation-in .about-me-bt i, #navigation-in .skills-bt i, #navigation-in .portfolio-bt i, #navigation-in .contact-bt i {
       color: #eef6ff; }
   #navigation-in .slider-bt:hover {
-    border-top: 2px solid #666666;
-    border-bottom: 2px solid #666666; }
+    border-top: 3px solid #666666;
+    border-bottom: 3px solid #666666; }
   #navigation-in .home-bt:hover {
-    border-top: 2px solid #112f41;
-    border-bottom: 2px solid #112f41; }
+    border-top: 3px solid #112f41;
+    border-bottom: 3px solid #112f41; }
   #navigation-in .about-me-bt:hover {
-    border-top: 2px solid #068587;
-    border-bottom: 2px solid #068587; }
+    border-top: 3px solid #068587;
+    border-bottom: 3px solid #068587; }
   #navigation-in .skills-bt:hover {
-    border-top: 2px solid #4fb99f;
-    border-bottom: 2px solid #4fb99f; }
+    border-top: 3px solid #4fb99f;
+    border-bottom: 3px solid #4fb99f; }
   #navigation-in .portfolio-bt:hover {
-    border-top: 2px solid #f2b134;
-    border-bottom: 2px solid #f2b134; }
+    border-top: 3px solid #f2b134;
+    border-bottom: 3px solid #f2b134; }
   #navigation-in .contact-bt:hover {
-    border-top: 2px solid #ed553b;
-    border-bottom: 2px solid #ed553b; }
+    border-top: 3px solid #ed553b;
+    border-bottom: 3px solid #ed553b; }
 
 #home {
   justify-content: flex-end;
@@ -259,15 +259,32 @@
   #skills i {
     width: 4rem;
     padding: 0.5rem 0 0.5rem 0; }
+  #skills li {
+    text-shadow: 1px 1px 6px #000000;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    padding: 0.8rem 0 0.8rem 0; }
+    #skills li::before {
+      content: "\2022";
+      color: #4fb99f;
+      font-weight: bold;
+      display: inline-block;
+      width: 1rem; }
   #skills .lists {
-    border-left: 4px solid #4fb99f;
-    margin-left: 2rem;
-    padding-left: 1rem; }
-    #skills .lists .list .item {
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: row;
-      display: flex; }
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    display: flex; }
+    #skills .lists .list {
+      border-left: 4px solid #4fb99f;
+      margin-left: 2rem;
+      padding-left: 1rem;
+      padding-right: 3rem; }
+      #skills .lists .list .item {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        display: flex; }
 
 #portfolio {
   justify-content: flex-end;

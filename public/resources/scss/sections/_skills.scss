@@ -29,11 +29,29 @@
     padding: 0.5rem 0 0.5rem 0;
   }
 
+  li {
+    text-shadow: 1px 1px 6px $black;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    padding: 0.8rem 0 0.8rem 0;
+
+    &::before {
+      content: "\2022";
+      color: $skills;
+      font-weight: bold;
+      display: inline-block;
+      width: 1rem;
+    }
+  }
+
   .lists {
-    border-left: 4px solid $skills;
-    margin-left: 2rem;
-    padding-left: 1rem;
+    @include flex-box(flex-start, stretch, row, flex);
+
     .list {
+      border-left: 4px solid $skills;
+      margin-left: 2rem;
+      padding-left: 1rem;
+      padding-right: 3rem;
       .item {
         @include flex-box(flex-start, center, row, flex);
       }

@@ -33,43 +33,43 @@
       width: 100%;
 
       .slider, .home, .about-me, .skills, .portfolio, .contact {
-        border-bottom: 2px solid $broken-white;
+        border-bottom: 3px solid $broken-white;
         transition: border-bottom 400ms ease;
       }
 
       .slider {
         &:hover {
-          border-bottom: 2px solid $gray;
+          border-bottom: 3px solid $gray;
         }
       }
 
       .home {
         &:hover {
-          border-bottom: 2px solid $home;
+          border-bottom: 3px solid $home;
         }
       }
 
       .about-me {
         &:hover {
-          border-bottom: 2px solid $about-me;
+          border-bottom: 3px solid $about-me;
         }
       }
 
       .skills {
         &:hover {
-          border-bottom: 2px solid $skills;
+          border-bottom: 3px solid $skills;
         }
       }
 
       .portfolio {
         &:hover {
-          border-bottom: 2px solid $portfolio;
+          border-bottom: 3px solid $portfolio;
         }
       }
 
       .contact {
         &:hover {
-          border-bottom: 2px solid $contact;
+          border-bottom: 3px solid $contact;
         }
       }
 
@@ -122,8 +122,8 @@
     @include flex-box(center, center, row, flex);
     width: 100%;
     margin: 10px 0 10px 0;
-    border-top: 2px solid $broken-white;
-    border-bottom: 2px solid $broken-white;
+    border-top: 3px solid $broken-white;
+    border-bottom: 3px solid $broken-white;
     transition: border-top 400ms ease, border-bottom 400ms ease;
 
     i{
@@ -133,43 +133,43 @@
 
   .slider-bt {
     &:hover {
-      border-top: 2px solid $gray;
-      border-bottom: 2px solid $gray;
+      border-top: 3px solid $gray;
+      border-bottom: 3px solid $gray;
     }
   }
 
   .home-bt {
     &:hover {
-      border-top: 2px solid $home;
-      border-bottom: 2px solid $home;
+      border-top: 3px solid $home;
+      border-bottom: 3px solid $home;
     }
   }
 
   .about-me-bt {
     &:hover {
-      border-top: 2px solid $about-me;
-      border-bottom: 2px solid $about-me;
+      border-top: 3px solid $about-me;
+      border-bottom: 3px solid $about-me;
     }
   }
 
   .skills-bt {
     &:hover {
-      border-top: 2px solid $skills;
-      border-bottom: 2px solid $skills;
+      border-top: 3px solid $skills;
+      border-bottom: 3px solid $skills;
     }
   }
 
   .portfolio-bt {
     &:hover {
-      border-top: 2px solid $portfolio;
-      border-bottom: 2px solid $portfolio;
+      border-top: 3px solid $portfolio;
+      border-bottom: 3px solid $portfolio;
     }
   }
 
   .contact-bt {
     &:hover {
-      border-top: 2px solid $contact;
-      border-bottom: 2px solid $contact;
+      border-top: 3px solid $contact;
+      border-bottom: 3px solid $contact;
     }
   }
 }
