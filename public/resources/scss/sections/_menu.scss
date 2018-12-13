@@ -8,7 +8,7 @@
   width: 20%;
   left: 0;
   min-height: 100vh;
-  background-color: $black;
+  background-color: rgba(0, 0, 0, 0.75);
   border-right: 3px solid $broken-white;
   box-shadow: 1px 0 15px $black;
   transition: border-right 400ms ease;
@@ -88,7 +88,7 @@
           .icon {
             @include flex-box(center, stretch, row, flex);
             width: 15%;
-            color: $black;
+            color: rgba(0, 0, 0, 0);
             transition: color 400ms ease;
           }
         }
@@ -107,7 +107,7 @@
   width: 5%;
   left: -6%;
   min-height: 100vh;
-  background-color: $black;
+  background-color: rgba(0, 0, 0, 0.75);
   border-right: 3px solid $broken-white;
   box-shadow: 1px 0 15px $black;
   transition: border-right 400ms ease;

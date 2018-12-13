@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('.slider .icon').css('color', '#eef6ff');
     }, function() {
     $('#navigation-out').css('border-right', '3px solid #eef6ff');
-    $('.slider .icon').css('color', '#000000');
+    $('.slider .icon').css('color', 'rgba(0, 0, 0, 0)');
   });
 
   $('.home').hover(function() {
@@ -14,7 +14,7 @@ $(document).ready(function() {
     $('.home .icon').css('color', '#eef6ff');
     }, function() {
     $('#navigation-out').css('border-right', '3px solid #eef6ff');
-    $('.home .icon').css('color', '#000000');
+    $('.home .icon').css('color', 'rgba(0, 0, 0, 0)');
   });
 
   $('.about-me').hover(function() {
@@ -22,7 +22,7 @@ $(document).ready(function() {
     $('.about-me .icon').css('color', '#eef6ff');
     }, function() {
     $('#navigation-out').css('border-right', '3px solid #eef6ff');
-    $('.about-me .icon').css('color', '#000000');
+    $('.about-me .icon').css('color', 'rgba(0, 0, 0, 0)');
   });
 
   $('.skills').hover(function() {
@@ -30,7 +30,7 @@ $(document).ready(function() {
     $('.skills .icon').css('color', '#eef6ff');
     }, function() {
     $('#navigation-out').css('border-right', '3px solid #eef6ff');
-    $('.skills .icon').css('color', '#000000');
+    $('.skills .icon').css('color', 'rgba(0, 0, 0, 0)');
   });
 
   $('.portfolio').hover(function() {
@@ -38,7 +38,7 @@ $(document).ready(function() {
     $('.portfolio .icon').css('color', '#eef6ff');
     }, function() {
     $('#navigation-out').css('border-right', '3px solid #eef6ff');
-    $('.portfolio .icon').css('color', '#000000');
+    $('.portfolio .icon').css('color', 'rgba(0, 0, 0, 0)');
   });
 
   $('.contact').hover(function() {
@@ -46,7 +46,7 @@ $(document).ready(function() {
     $('.contact .icon').css('color', '#eef6ff');
     }, function() {
     $('#navigation-out').css('border-right', '3px solid #eef6ff');
-    $('.contact .icon').css('color', '#000000');
+    $('.contact .icon').css('color', 'rgba(0, 0, 0, 0)');
   });
 
   // Change color of navigation border on hover (button layout)
