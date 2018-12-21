@@ -305,36 +305,46 @@
     flex-direction: row;
     display: flex;
     width: 100%;
-    height: 100vh; }
-    #portfolio .p-row .p-col {
-      justify-content: flex-start;
-      align-items: stretch;
-      flex-direction: column;
+    height: 50vh; }
+    #portfolio .p-row .p-item {
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
       display: flex;
-      width: 30%; }
-      #portfolio .p-row .p-col .p-item {
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        display: flex;
-        box-sizing: content-box;
-        border: 2px solid #eef6ff;
-        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
-        width: 90%;
-        height: 20rem;
-        margin: 1rem;
-        cursor: pointer;
-        transition: background-color 500ms ease; }
-        #portfolio .p-row .p-col .p-item:hover {
-          background-color: rgba(238, 246, 255, 0.3); }
-          #portfolio .p-row .p-col .p-item:hover .p-item-box {
-            justify-content: flex-start;
-            align-items: stretch;
-            flex-direction: row;
-            display: flex;
-            box-sizing: content-box;
-            width: 90%;
-            height: 90%; }
+      position: relative;
+      box-sizing: content-box;
+      border: 1px solid #eef6ff;
+      width: 90%;
+      height: 40vh;
+      margin: 1rem;
+      cursor: pointer;
+      transition: background-color 500ms ease; }
+      #portfolio .p-row .p-item:hover {
+        background-color: rgba(238, 246, 255, 0.2); }
+      #portfolio .p-row .p-item:hover::before {
+        transform: scale(1.05, 1); }
+      #portfolio .p-row .p-item:hover::after {
+        transform: scale(1, 1.05); }
+      #portfolio .p-row .p-item::before, #portfolio .p-row .p-item::after {
+        content: '';
+        position: absolute;
+        top: -1px;
+        bottom: -1px;
+        left: -1px;
+        right: -1px; }
+      #portfolio .p-row .p-item::before {
+        border-top: 1px solid #f2b134;
+        border-bottom: 1px solid #f2b134;
+        transform: scale(0, 1);
+        transition: transform ease-out 250ms; }
+      #portfolio .p-row .p-item::after {
+        border-left: 1px solid #f2b134;
+        border-right: 1px solid #f2b134;
+        transform: scale(1, 0);
+        transition: transform ease-out 250ms; }
+      #portfolio .p-row .p-item h2 {
+        text-shadow: 1px 1px 6px #000000;
+        font-size: 1.1rem; }
 
 #contact {
   justify-content: flex-end;
