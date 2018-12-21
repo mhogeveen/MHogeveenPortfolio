@@ -11,6 +11,7 @@
 
   .p-row {
     @include flex-box(center, center, row, flex);
+    display: none;
     width: 100%;
     height: 50vh;
 
@@ -65,6 +66,35 @@
       h2 {
         text-shadow: 1px 1px 6px $black;
         font-size: 1.1rem;
+      }
+    }
+  }
+
+  .p-info {
+    @include flex-box(flex-start, stretch, row, flex);
+    width: 100%;
+    height: 80vh;
+
+    h1 {
+      color: $broken-white;
+      font-size: 1.75rem;
+      font-weight: 500;
+      text-shadow: 1px 1px 6px $black;
+    }
+
+    .p-col-left {
+      width: 70%;
+    }
+
+    .p-col-right {
+      width: 30%;
+      height: 100%;
+      opacity: 0.8;
+
+      img {
+        width: auto;
+        max-height: 100%;
+        border: 1px solid $broken-white;
       }
     }
   }

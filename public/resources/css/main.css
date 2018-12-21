@@ -304,6 +304,7 @@
     align-items: center;
     flex-direction: row;
     display: flex;
+    display: none;
     width: 100%;
     height: 50vh; }
     #portfolio .p-row .p-item {
@@ -345,6 +346,28 @@
       #portfolio .p-row .p-item h2 {
         text-shadow: 1px 1px 6px #000000;
         font-size: 1.1rem; }
+  #portfolio .p-info {
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 80vh; }
+    #portfolio .p-info h1 {
+      color: #eef6ff;
+      font-size: 1.75rem;
+      font-weight: 500;
+      text-shadow: 1px 1px 6px #000000; }
+    #portfolio .p-info .p-col-left {
+      width: 70%; }
+    #portfolio .p-info .p-col-right {
+      width: 30%;
+      height: 100%;
+      opacity: 0.8; }
+      #portfolio .p-info .p-col-right img {
+        width: auto;
+        max-height: 100%;
+        border: 1px solid #eef6ff; }
 
 #contact {
   justify-content: flex-end;
