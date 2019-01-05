@@ -101,4 +101,19 @@ $(document).ready(function() {
     return false;
   });
 
+  // Portfolio toggles
+  // Return to overview button
+  $('.p-backward').click(function() {
+    $('.portfolio-info').animate({'right': '-100%'});
+    $('.portfolio-overview').animate({'right': '0'});
+    return false;
+  });
+
+  // Open info view
+  $('.colmar').click(function() {
+    $('.portfolio-overview').animate({'right': '100%'});
+    $('.portfolio-info').animate({'right': '0'});
+    return false;
+  });
+
 });

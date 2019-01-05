@@ -8,93 +8,148 @@
   width: 100%;
   height: 100vh;
   border-right: 3px solid $portfolio;
+  overflow: hidden;
 
-  .p-row {
-    @include flex-box(center, center, row, flex);
-    display: none;
+  .portfolio-overview {
+    @include flex-box(flex-end, stretch, row, flex);
+    position: absolute;
+    box-sizing: border-box;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
+    z-index: 20;
+    right: 0;
 
-    .p-item {
-      @include flex-box(center, center, row, flex);
+    .p-row {
+      @include flex-box(flex-start, center, row, flex);
       position: relative;
-      box-sizing: content-box;
-      border: 1px solid $broken-white;
-      //box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
-      width: 90%;
-      height: 40vh;
-      margin: 1rem;
-      cursor: pointer;
-      transition: background-color 500ms ease;
+      width: 100%;
+      height: 50vh;
 
-      &:hover {
-        background-color: rgba(238, 246, 255, 0.2);
-      }
+      .p-item {
+        @include flex-box(center, center, row, flex);
+        position: relative;
+        box-sizing: content-box;
+        border: 1px solid $broken-white;
+        width: 90%;
+        height: 40vh;
+        margin: 1rem;
+        cursor: pointer;
+        transition: background-color 500ms ease;
 
-      &:hover::before {
-        transform: scale(1.05, 1);
-      }
+        &:hover {
+          background-color: rgba(238, 246, 255, 0.2);
+        }
 
-      &:hover::after {
-        transform: scale(1, 1.05);
-      }
+        &:hover::before {
+          transform: scale(1.05, 1);
+        }
 
-      &::before,
-      &::after {
-        content: '';
-        position: absolute;
-        top: -1px;
-        bottom: -1px;
-        left: -1px;
-        right: -1px;
-      }
+        &:hover::after {
+          transform: scale(1, 1.05);
+        }
 
-      &::before {
-        border-top: 1px solid $portfolio;
-        border-bottom: 1px solid $portfolio;
-        transform: scale(0, 1);
-        transition: transform ease-out 250ms;
-      }
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          top: -1px;
+          bottom: -1px;
+          left: -1px;
+          right: -1px;
+        }
 
-      &::after {
-        border-left: 1px solid $portfolio;
-        border-right: 1px solid $portfolio;
-        transform: scale(1, 0);
-        transition: transform ease-out 250ms;
-      }
+        &::before {
+          border-top: 1px solid $portfolio;
+          border-bottom: 1px solid $portfolio;
+          transform: scale(0, 1);
+          transition: transform ease-out 250ms;
+        }
 
-      h2 {
-        text-shadow: 1px 1px 6px $black;
-        font-size: 1.1rem;
+        &::after {
+          border-left: 1px solid $portfolio;
+          border-right: 1px solid $portfolio;
+          transform: scale(1, 0);
+          transition: transform ease-out 250ms;
+        }
+
+        h2 {
+          text-shadow: 1px 1px 6px $black;
+          font-size: 1.1rem;
+        }
       }
     }
   }
 
-  .p-info {
-    @include flex-box(flex-start, stretch, row, flex);
+  .portfolio-info {
+    @include flex-box(flex-end, stretch, row, flex);
+    position: absolute;
+    box-sizing: border-box;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
+    z-index: 30;
+    right: -100%;
 
-    h1 {
-      color: $broken-white;
-      font-size: 1.75rem;
-      font-weight: 500;
-      text-shadow: 1px 1px 6px $black;
-    }
+    .p-info {
+      @include flex-box(flex-start, stretch, row, flex);
+      position: relative;
+      width: 100%;
+      height: 80vh;
 
-    .p-col-left {
-      width: 70%;
-    }
+      h1 {
+        color: $broken-white;
+        font-size: 1.75rem;
+        font-weight: 500;
+        text-shadow: 1px 1px 6px $black;
+        padding-bottom: 2rem;
+      }
 
-    .p-col-right {
-      width: 30%;
-      height: 100%;
-      opacity: 0.8;
+      p {
+        color: $broken-white;
+        text-shadow: 1px 1px 6px $black;
+        font-size: 1.1rem;
+        line-height: 1.3;
+        border-left: 4px solid $portfolio;
+        margin-left: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
 
-      img {
-        width: auto;
-        max-height: 100%;
-        border: 1px solid $broken-white;
+      span {
+        color: $broken-white;
+        text-shadow: 1px 1px 6px $black;
+        font-size: 1.1rem;
+        line-height: 1.3;
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+        transition: border-bottom 400ms ease;
+        cursor: pointer;
+
+        &:hover {
+          border-bottom: 2px solid $portfolio;
+        }
+
+        i {
+          padding-right: 0.5rem;
+        }
+      }
+
+      .p-col-left {
+        @include flex-box(center, stretch, column, flex);
+        width: 70%;
+      }
+
+      .p-col-right {
+        width: 30%;
+        height: 100%;
+        opacity: 0.8;
+
+        img {
+          width: auto;
+          max-height: 100%;
+          border: 1px solid $broken-white;
+        }
       }
     }
   }
