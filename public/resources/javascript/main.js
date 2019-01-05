@@ -104,15 +104,45 @@ $(document).ready(function() {
   // Portfolio toggles
   // Return to overview button
   $('.p-backward').click(function() {
-    $('.portfolio-info').animate({'right': '-100%'});
+    $('.portfolio-info1, .portfolio-info2, .portfolio-info3, .portfolio-info4, .portfolio-info5, .portfolio-info6').animate({'right': '-100%'});
     $('.portfolio-overview').animate({'right': '0'});
     return false;
   });
 
   // Open info view
-  $('.colmar').click(function() {
+  $('.item1-button').click(function() {
     $('.portfolio-overview').animate({'right': '100%'});
-    $('.portfolio-info').animate({'right': '0'});
+    $('.portfolio-info1').animate({'right': '0'});
+    return false;
+  });
+
+  $('.item2-button').click(function() {
+    $('.portfolio-overview').animate({'right': '100%'});
+    $('.portfolio-info2').animate({'right': '0'});
+    return false;
+  });
+
+  $('.item3-button').click(function() {
+    $('.portfolio-overview').animate({'right': '100%'});
+    $('.portfolio-info3').animate({'right': '0'});
+    return false;
+  });
+
+  $('.item4-button').click(function() {
+    $('.portfolio-overview').animate({'right': '100%'});
+    $('.portfolio-info4').animate({'right': '0'});
+    return false;
+  });
+
+  $('.item5-button').click(function() {
+    $('.portfolio-overview').animate({'right': '100%'});
+    $('.portfolio-info5').animate({'right': '0'});
+    return false;
+  });
+
+  $('.item6-button').click(function() {
+    $('.portfolio-overview').animate({'right': '100%'});
+    $('.portfolio-info6').animate({'right': '0'});
     return false;
   });
 
