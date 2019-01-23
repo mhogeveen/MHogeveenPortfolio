@@ -355,9 +355,23 @@
           border-right: 1px solid #f2b134;
           transform: scale(1, 0);
           transition: transform ease-out 250ms; }
-        #portfolio .portfolio-overview .p-row .p-item h2 {
-          text-shadow: 1px 1px 6px #000000;
-          font-size: 1.1rem; }
+  #portfolio .item1-button h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center; }
+  #portfolio .item2-button h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: 2px 2px #000000;
+    text-align: center; }
+  #portfolio .item3-button h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #1e1f26;
+    text-align: center; }
   #portfolio .portfolio-info1,
   #portfolio .portfolio-info2,
   #portfolio .portfolio-info3,
@@ -392,10 +406,6 @@
       #portfolio .portfolio-info4 .p-info h1,
       #portfolio .portfolio-info5 .p-info h1,
       #portfolio .portfolio-info6 .p-info h1 {
-        color: #eef6ff;
-        font-size: 1.75rem;
-        font-weight: 500;
-        text-shadow: 1px 1px 6px #000000;
         padding-bottom: 2rem; }
       #portfolio .portfolio-info1 .p-info p,
       #portfolio .portfolio-info2 .p-info p,
@@ -470,6 +480,23 @@
           width: auto;
           max-height: 100%;
           border: 1px solid #eef6ff; }
+
+.portfolio-info1 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600; }
+
+.portfolio-info2 h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 2px 2px #000000; }
+
+.portfolio-info3 h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #1e1f26; }
 
 #contact {
   justify-content: flex-end;
