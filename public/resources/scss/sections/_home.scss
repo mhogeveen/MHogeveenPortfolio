@@ -1,10 +1,8 @@
 #home {
   @include flex-box(flex-end, stretch, row, flex);
+  @include parallax-bg(url(../images/bg-home.jpg));
   position: relative;
   box-sizing: border-box;
-  background-image: url(../images/bg-home.jpg);
-  background-attachment: fixed;
-  background-size: cover;
   border-right: 3px solid $home;
   width: 100%;
   min-height: 100vh;

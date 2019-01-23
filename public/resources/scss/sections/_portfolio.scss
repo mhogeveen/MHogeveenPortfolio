@@ -1,181 +1,179 @@
 #portfolio {
   @include flex-box(flex-end, stretch, row, flex);
+  @include parallax-bg(url(../images/bg-portfolio.jpg));
   position: relative;
   box-sizing: border-box;
-  background-image: url(../images/bg-portfolio.jpg);
-  background-attachment: fixed;
-  background-size: cover;
   width: 100%;
   height: 100vh;
   border-right: 3px solid $portfolio;
   overflow: hidden;
+}
 
-  .portfolio-overview {
-    @include flex-box(flex-end, stretch, row, flex);
+.portfolio-overview {
+  @include flex-box(flex-end, stretch, row, flex);
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  right: 0;
+}
+
+.p-row {
+  @include flex-box(flex-start, center, row, flex);
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.p-item {
+  @include flex-box(center, center, row, flex);
+  position: relative;
+  box-sizing: content-box;
+  border: 1px solid $broken-white;
+  width: 90%;
+  height: 40vh;
+  margin: 1rem;
+  cursor: pointer;
+  transition: background-color 500ms ease;
+
+  &:hover {
+    background-color: rgba(238, 246, 255, 0.2);
+  }
+
+  &:hover::before {
+    transform: scale(1.05, 1);
+  }
+
+  &:hover::after {
+    transform: scale(1, 1.05);
+  }
+
+  &::before,
+  &::after {
+    content: '';
     position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100vh;
-    z-index: 20;
-    right: 0;
-
-    .p-row {
-      @include flex-box(flex-start, center, row, flex);
-      position: relative;
-      width: 100%;
-      height: 50vh;
-
-      .p-item {
-        @include flex-box(center, center, row, flex);
-        position: relative;
-        box-sizing: content-box;
-        border: 1px solid $broken-white;
-        width: 90%;
-        height: 40vh;
-        margin: 1rem;
-        cursor: pointer;
-        transition: background-color 500ms ease;
-
-        &:hover {
-          background-color: rgba(238, 246, 255, 0.2);
-        }
-
-        &:hover::before {
-          transform: scale(1.05, 1);
-        }
-
-        &:hover::after {
-          transform: scale(1, 1.05);
-        }
-
-        &::before,
-        &::after {
-          content: '';
-          position: absolute;
-          top: -1px;
-          bottom: -1px;
-          left: -1px;
-          right: -1px;
-        }
-
-        &::before {
-          border-top: 1px solid $portfolio;
-          border-bottom: 1px solid $portfolio;
-          transform: scale(0, 1);
-          transition: transform ease-out 250ms;
-        }
-
-        &::after {
-          border-left: 1px solid $portfolio;
-          border-right: 1px solid $portfolio;
-          transform: scale(1, 0);
-          transition: transform ease-out 250ms;
-        }
-      }
-    }
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
   }
 
-  .item1-button {
-    h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      font-weight: 600;
-      text-align: center;
-    }
+  &::before {
+    border-top: 1px solid $portfolio;
+    border-bottom: 1px solid $portfolio;
+    transform: scale(0, 1);
+    transition: transform ease-out 250ms;
   }
 
-  .item2-button {
-    h2 {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 2.5rem;
-      font-weight: 400;
-      text-shadow: 2px 2px #000000;
-      text-align: center;
-    }
+  &::after {
+    border-left: 1px solid $portfolio;
+    border-right: 1px solid $portfolio;
+    transform: scale(1, 0);
+    transition: transform ease-out 250ms;
+  }
+}
+
+.item1-button {
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+.item2-button {
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: 2px 2px #000000;
+    text-align: center;
+  }
+}
+
+.item3-button {
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #1e1f26;
+    text-align: center;
+  }
+}
+
+.portfolio-info1,
+.portfolio-info2,
+.portfolio-info3,
+.portfolio-info4,
+.portfolio-info5,
+.portfolio-info6 {
+  @include flex-box(flex-end, stretch, row, flex);
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  right: -100%;
+}
+
+.p-info {
+  @include flex-box(flex-start, stretch, row, flex);
+  position: relative;
+  width: 100%;
+  height: 80vh;
+
+  h1 {
+    padding-bottom: 2rem;
   }
 
-  .item3-button {
-    h2 {
-      font-family: 'Raleway', sans-serif;
-      font-size: 2.5rem;
-      font-weight: 500;
-      color: #1e1f26;
-      text-align: center;
-    }
+  p {
+    color: $broken-white;
+    text-shadow: 1px 1px 6px $black;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    border-left: 4px solid $portfolio;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .portfolio-info1,
-  .portfolio-info2,
-  .portfolio-info3,
-  .portfolio-info4,
-  .portfolio-info5,
-  .portfolio-info6 {
-    @include flex-box(flex-end, stretch, row, flex);
+  span {
+    color: $broken-white;
+    text-shadow: 1px 1px 6px $black;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    text-decoration: none;
     position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100vh;
-    right: -100%;
+    bottom: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 400ms ease;
+    cursor: pointer;
 
-    .p-info {
-      @include flex-box(flex-start, stretch, row, flex);
-      position: relative;
-      width: 100%;
-      height: 80vh;
-
-      h1 {
-        padding-bottom: 2rem;
-      }
-
-      p {
-        color: $broken-white;
-        text-shadow: 1px 1px 6px $black;
-        font-size: 1.1rem;
-        line-height: 1.3;
-        border-left: 4px solid $portfolio;
-        margin-left: 2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-
-      span {
-        color: $broken-white;
-        text-shadow: 1px 1px 6px $black;
-        font-size: 1.1rem;
-        line-height: 1.3;
-        text-decoration: none;
-        position: absolute;
-        bottom: 0;
-        border-bottom: 2px solid rgba(0, 0, 0, 0);
-        transition: border-bottom 400ms ease;
-        cursor: pointer;
-
-        &:hover {
-          border-bottom: 2px solid $portfolio;
-        }
-
-        i {
-          padding-right: 0.5rem;
-        }
-      }
-
-      .p-col-left {
-        @include flex-box(center, stretch, column, flex);
-        width: 70%;
-      }
-
-      .p-col-right {
-        width: 30%;
-        height: 100%;
-        opacity: 0.8;
-
-        img {
-          width: auto;
-          max-height: 100%;
-          border: 1px solid $broken-white;
-        }
-      }
+    &:hover {
+      border-bottom: 2px solid $portfolio;
     }
+
+    i {
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+.p-col-left {
+  @include flex-box(center, stretch, column, flex);
+  width: 70%;
+}
+
+.p-col-right {
+  width: 30%;
+  height: 100%;
+  opacity: 0.8;
+
+  img {
+    width: auto;
+    max-height: 100%;
+    border: 1px solid $broken-white;
   }
 }
 

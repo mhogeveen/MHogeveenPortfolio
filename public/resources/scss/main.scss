@@ -20,3 +20,18 @@ html {
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
 }
+
+.gray {
+  color: $gray;
+}
+
+.broken-white {
+  color: $broken-white;
+}
+
+.container {
+  @include flex-box(center, flex-start, column, flex);
+  padding-right: 10%;
+  width: 65%;
+  height: 100vh;
+}

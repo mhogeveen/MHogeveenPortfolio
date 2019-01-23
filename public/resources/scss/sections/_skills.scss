@@ -1,10 +1,8 @@
 #skills {
   @include flex-box(flex-end, stretch, row, flex);
+  @include parallax-bg(url(../images/bg-skills.jpg));
   position: relative;
   box-sizing: border-box;
-  background-image: url(../images/bg-skills.jpg);
-  background-attachment: fixed;
-  background-size: cover;
   width: 100%;
   height: 100vh;
   border-right: 3px solid $skills;
@@ -43,18 +41,19 @@
       width: 1rem;
     }
   }
+}
 
-  .lists {
-    @include flex-box(flex-start, stretch, row, flex);
+.lists {
+  @include flex-box(flex-start, stretch, row, flex);
+}
 
-    .list {
-      border-left: 4px solid $skills;
-      margin-left: 2rem;
-      padding-left: 1rem;
-      padding-right: 3rem;
-      .item {
-        @include flex-box(flex-start, center, row, flex);
-      }
-    }
-  }
+.list {
+  border-left: 4px solid $skills;
+  margin-left: 2rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+
+.item {
+  @include flex-box(flex-start, center, row, flex);
 }
