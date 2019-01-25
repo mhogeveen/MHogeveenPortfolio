@@ -366,6 +366,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: 600;
+  color: #f2be54;
   text-align: center; }
 
 .item2-button h2 {
@@ -452,7 +453,8 @@
 .portfolio-info1 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
-  font-weight: 600; }
+  font-weight: 600;
+  color: #f2be54; }
 
 .portfolio-info2 h1 {
   font-family: 'Open Sans', sans-serif;
