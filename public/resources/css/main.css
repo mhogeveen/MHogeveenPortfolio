@@ -122,6 +122,14 @@
     border-top: 3px solid #ed553b;
     border-bottom: 3px solid #ed553b; }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); }
+
 #home {
   justify-content: flex-end;
   align-items: stretch;
@@ -493,7 +501,7 @@ html {
   flex-direction: column;
   display: flex;
   padding-right: 10%;
-  width: 65%;
+  width: 80%;
   height: 100vh; }
 
 /*# sourceMappingURL=main.css.map */

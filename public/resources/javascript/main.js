@@ -87,18 +87,31 @@ $(document).ready(function() {
   });
 
   // Toggle between menu styles
-  $('.slider').click(function() {
-    $('#navigation-out').animate({'left': '-21%'});
-    $('#navigation-in').animate({'left': '0'});
-    $('.container').animate({'width': '80%'});
-    return false;
-  });
-
   $('.slider-bt').click(function() {
     $('#navigation-in').animate({'left': '-6%'});
     $('#navigation-out').animate({'left': '0'});
     $('.container').animate({'width': '65%'});
+    $('.modal').css('display', 'block');
     return false;
+  });
+
+  $('.slider, .modal').click(function() {
+    $('#navigation-out').animate({'left': '-21%'});
+    $('#navigation-in').animate({'left': '0'});
+    $('.container').animate({'width': '80%'});
+    $('.modal').css('display', 'none');
+    return false;
+  });
+
+  $('.home, .about-me, .skills, .portfolio, .contact').click(function() {
+    $('#navigation-out').animate({'left': '-21%'});
+    $('#navigation-in').animate({'left': '0'});
+    $('.container').animate({'width': '80%'});
+    $('.modal').css('display', 'none');
+  });
+
+  $('.portfolio, .portfolio-bt').click(function() {
+    $('.p-backward').click();
   });
 
   // Portfolio toggles

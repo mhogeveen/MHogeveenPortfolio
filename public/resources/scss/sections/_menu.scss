@@ -173,3 +173,12 @@
     }
   }
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
