@@ -131,7 +131,7 @@
   background-color: rgba(0, 0, 0, 0.5); }
 
 #home {
-  justify-content: flex-end;
+  justify-content: center;
   align-items: stretch;
   flex-direction: row;
   display: flex;
@@ -166,7 +166,7 @@
     font-size: 0.75rem; }
 
 #about-me {
-  justify-content: flex-end;
+  justify-content: center;
   align-items: stretch;
   flex-direction: row;
   display: flex;
@@ -231,7 +231,7 @@
     padding: 2rem 3rem 0 5rem; }
 
 #skills {
-  justify-content: flex-end;
+  justify-content: center;
   align-items: stretch;
   flex-direction: row;
   display: flex;
@@ -289,7 +289,7 @@
   display: flex; }
 
 #portfolio {
-  justify-content: flex-end;
+  justify-content: center;
   align-items: stretch;
   flex-direction: row;
   display: flex;
@@ -305,7 +305,7 @@
   overflow: hidden; }
 
 .portfolio-overview {
-  justify-content: flex-end;
+  justify-content: center;
   align-items: stretch;
   flex-direction: row;
   display: flex;
@@ -389,7 +389,7 @@
 .portfolio-info4,
 .portfolio-info5,
 .portfolio-info6 {
-  justify-content: flex-end;
+  justify-content: center;
   align-items: stretch;
   flex-direction: row;
   display: flex;
@@ -469,7 +469,7 @@
   color: #1e1f26; }
 
 #contact {
-  justify-content: flex-end;
+  justify-content: center;
   align-items: stretch;
   flex-direction: row;
   display: flex;
@@ -502,7 +502,6 @@ html {
   align-items: flex-start;
   flex-direction: column;
   display: flex;
-  padding-right: 10%;
   width: 80%;
   height: 100vh; }
 

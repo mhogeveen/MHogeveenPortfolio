@@ -1,5 +1,5 @@
 #about-me {
-  @include flex-box(flex-end, stretch, row, flex);
+  @include flex-box(center, stretch, row, flex);
   @include parallax-bg(url(../images/bg-about-me.jpg));
   position: relative;
   box-sizing: border-box;
