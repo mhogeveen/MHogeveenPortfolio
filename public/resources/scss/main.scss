@@ -35,3 +35,14 @@ html {
   width: 80%;
   height: 100vh;
 }
+
+.next-btn {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 40;
+
+  i {
+    color: $broken-white;
+  }
+}
