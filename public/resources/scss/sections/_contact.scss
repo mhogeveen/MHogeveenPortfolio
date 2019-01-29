@@ -7,3 +7,66 @@
   height: 100vh;
   border-right: 3px solid $contact;
 }
+
+.c-wrapper {
+  @include flex-box(space-between, center, row, flex);
+  width: 100%;
+  height: 100%;
+}
+
+.c-col {
+  width: 45%;
+  height: 90%;
+}
+
+.c-info {
+  @include flex-box(flex-start, stretch, column, flex);
+  width: 100%;
+  height: 75%;
+  border: 1px solid $broken-white;
+
+  h2 {
+    color: $broken-white;
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 6px $black;
+  }
+}
+
+.c-social {
+  @include flex-box(space-around, center, row, flex);
+  width: 100%;
+  height: 25%;
+  border: 1px solid $broken-white;
+
+  i {
+    color: $broken-white;
+    transition: color 300ms ease;
+
+    &:hover {
+      color: $contact;
+    }
+  }
+}
+
+.c-map {
+  @include flex-box(center, center, column, flex);
+  width: 100%;
+  height: 75%;
+  border: 1px solid $broken-white;
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    padding-top: 4rem;
+  }
+}
+
+.c-address {
+  @include flex-box(center, center, row, flex);
+  width: 100%;
+  height: 25%;
+  border: 1px solid $broken-white;
+}
