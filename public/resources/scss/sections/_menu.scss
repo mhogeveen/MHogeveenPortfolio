@@ -143,6 +143,10 @@
     border-bottom: 3px solid $broken-white;
     transition: border-top 400ms ease, border-bottom 400ms ease;
 
+    @include mq($breakpoint1) {
+      margin: 0;
+    }
+
     i {
       color: $broken-white;
     }

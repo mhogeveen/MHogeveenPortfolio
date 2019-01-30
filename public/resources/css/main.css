@@ -115,6 +115,9 @@
     border-top: 3px solid #eef6ff;
     border-bottom: 3px solid #eef6ff;
     transition: border-top 400ms ease, border-bottom 400ms ease; }
+    @media only screen and (max-width: 900px) {
+      #navigation-in .slider-bt, #navigation-in .home-bt, #navigation-in .about-me-bt, #navigation-in .skills-bt, #navigation-in .portfolio-bt, #navigation-in .contact-bt {
+        margin: 0; } }
     #navigation-in .slider-bt i, #navigation-in .home-bt i, #navigation-in .about-me-bt i, #navigation-in .skills-bt i, #navigation-in .portfolio-bt i, #navigation-in .contact-bt i {
       color: #eef6ff; }
   #navigation-in .slider-bt:hover {
@@ -596,6 +599,9 @@ html {
   display: flex;
   width: 80%;
   height: 100%; }
+  @media only screen and (max-width: 900px) {
+    .container {
+      width: 90%; } }
 
 .next-btn {
   position: absolute;

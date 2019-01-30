@@ -33,6 +33,10 @@ html {
   @include flex-box(center, flex-start, column, flex);
   width: 80%;
   height: 100%;
+
+  @include mq($breakpoint1) {
+    width: 90%;
+  }
 }
 
 .next-btn {

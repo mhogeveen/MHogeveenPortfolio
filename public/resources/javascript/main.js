@@ -90,7 +90,6 @@ $(document).ready(function() {
   $('.slider-bt').click(function() {
     $('#navigation-in').animate({'left': '-10%'});
     $('#navigation-out').animate({'left': '0'});
-    //$('.container').animate({'width': '65%'});
     $('.modal').css('display', 'block');
     return false;
   });
@@ -98,7 +97,6 @@ $(document).ready(function() {
   $('.slider, .modal').click(function() {
     $('#navigation-out').animate({'left': '-30%'});
     $('#navigation-in').animate({'left': '0'});
-    //$('.container').animate({'width': '80%'});
     $('.modal').css('display', 'none');
     return false;
   });
@@ -106,7 +104,6 @@ $(document).ready(function() {
   $('.home, .about-me, .skills, .portfolio, .contact').click(function() {
     $('#navigation-out').animate({'left': '-21%'});
     $('#navigation-in').animate({'left': '0'});
-    //$('.container').animate({'width': '80%'});
     $('.modal').css('display', 'none');
   });
 
