@@ -14,6 +14,10 @@
   box-shadow: 1px 0 15px $black;
   transition: border-right 400ms ease;
 
+  @include mq($breakpoint1) {
+    display: none;
+  }
+
   .nav-content {
     @include flex-box(flex-start, flex-start, column, flex);
     align-self: center;
@@ -114,6 +118,17 @@
   box-shadow: 1px 0 15px $black;
   transition: border-right 400ms ease;
 
+  @include mq($breakpoint1) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    top: 0;
+    width: 100%;
+    height: auto;
+    min-width: auto;
+
+  }
+
   a {
     width: 100%;
     padding: 20px 0 20px 0;
@@ -137,6 +152,10 @@
     &:hover {
       border-top: 3px solid $gray;
       border-bottom: 3px solid $gray;
+    }
+
+    @include mq($breakpoint1) {
+      display: none;
     }
   }
 
@@ -183,4 +202,8 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
+
+  @include mq($breakpoint1) {
+    display: none;
+  }
 }
