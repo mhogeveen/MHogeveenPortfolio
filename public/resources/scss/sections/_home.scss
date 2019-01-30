@@ -5,7 +5,8 @@
   box-sizing: border-box;
   border-right: 3px solid $home;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 600px;
 
   h1 {
     color: $broken-white;
